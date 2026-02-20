@@ -789,6 +789,7 @@ int32_t TelemetrySensor::getPrecMultiplier() const
 
 int32_t TelemetrySensor::getPrecDivisor() const
 {
+  if (prec == 3) return 1000;
   if (prec == 2) return 100;
   if (prec == 1) return 10;
   return 1;
