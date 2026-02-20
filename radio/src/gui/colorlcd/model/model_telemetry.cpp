@@ -610,7 +610,7 @@ class SensorEditWindow : public SubPage
         });
 
     paramLines[P_PREC] = setupLine(STR_PRECISION, [=](Window* parent, coord_t x, coord_t y) {
-          new Choice(parent, {x, y, 0, 0}, STR_VPREC, 0, 2,
+          new Choice(parent, {x, y, 0, 0}, STR_VPREC, 0, 3,
                     GET_DEFAULT(sensor->prec), [=](uint8_t newValue) {
                       sensor->prec = newValue;
                       SET_DIRTY();
