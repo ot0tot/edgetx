@@ -75,8 +75,8 @@ const CrossfireSensor crossfireSensors[] = {
   CS(AIRSPEED_ID,    0, STR_DEF(STR_SENSOR_ASPD),          UNIT_KMH,               1),
   CS(CF_RPM_ID,      0, STR_DEF(STR_SENSOR_RPM),           UNIT_RPMS,              0),
   CS(TEMP_ID,        0, STR_DEF(STR_SENSOR_TEMP),          UNIT_DEGREE,            1),
-  CS(CELLS_ID,       0, STR_DEF(STR_SENSOR_CELLS),         UNIT_CELLS,             2),
-  CS(VOLT_ARRAY_ID,  0, STR_DEF(STR_SENSOR_VOLT),          UNIT_VOLTS,             2),
+  CS(CELLS_ID,       0, STR_DEF(STR_SENSOR_CELLS),         UNIT_CELLS,             3),
+  CS(VOLT_ARRAY_ID,  0, STR_DEF(STR_SENSOR_VOLT),          UNIT_VOLTS,             3),
   CS(0,              0, STR_DEF(STR_UNKNOWN),              UNIT_RAW,               0),
 };
 // clang-format on
