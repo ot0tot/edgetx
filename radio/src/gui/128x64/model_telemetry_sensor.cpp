@@ -177,7 +177,7 @@ void menuModelSensor(event_t event)
         break;
 
       case SENSOR_FIELD_PRECISION:
-        sensor->prec = editChoice(SENSOR_2ND_COLUMN, y, STR_PRECISION, STR_VPREC, sensor->prec, 0, 2, attr, event);
+        sensor->prec = editChoice(SENSOR_2ND_COLUMN, y, STR_PRECISION, STR_VPREC, sensor->prec, 0, 3, attr, event);
         if (attr && checkIncDec_Ret) {
           telemetryItems[s_currIdx].clear();
         }
