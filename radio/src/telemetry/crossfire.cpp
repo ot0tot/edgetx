@@ -426,7 +426,7 @@ void crossfireSetDefault(int index, uint16_t id, uint8_t subId)
   TelemetryUnit unit = sensor.unit;
   if (unit == UNIT_GPS_LATITUDE || unit == UNIT_GPS_LONGITUDE)
     unit = UNIT_GPS;
-  uint8_t prec = min<uint8_t>(2, sensor.precision);
+  uint8_t prec = min<uint8_t>(3, sensor.precision);
   telemetrySensor.init(STR_VAL(sensor.name), unit, prec);
   if (id == LINK_ID) {
     telemetrySensor.logs = true;
